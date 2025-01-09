@@ -4,11 +4,12 @@
  */
 var createCounter = function(n) {
     let count ;
-    count = n-1;
+    count = n;
 
     return function() {
-    count++;
-        return count;
+        return count++;
+         
+
     };
 };
 
