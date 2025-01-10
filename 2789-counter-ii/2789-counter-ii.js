@@ -4,23 +4,13 @@
  */
 var createCounter = function(init) {
     let n = init;
-    function increment(){
-        ++n;
-        return n;
-    }
-     function decrement(){
-        --n;
-         return n;
-    }
-     function reset(){
+    const increment=() => ++n
+    const decrement=() => --n
+    const reset=() =>{
         n=init;
-         return n;
+        return n
     }
-    return {
-        increment,
-        decrement,
-        reset
-    }
+    return{increment,decrement,reset}
 };
 
 
