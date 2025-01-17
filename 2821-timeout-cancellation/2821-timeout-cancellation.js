@@ -8,7 +8,7 @@ var cancellable = function(fn, args, t) {
 
 
  return function() {
-
+  
 
    clearTimeout(timer);  };
 };
